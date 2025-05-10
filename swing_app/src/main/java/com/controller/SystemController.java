@@ -4,7 +4,9 @@
  */
 package com.controller;
 
+import com.session.UserSession;
 import com.view.FormLogin;
+import com.view.FormMainMenu;
 
 /**
  *
@@ -16,7 +18,12 @@ public class SystemController {
         this.args  = args;
     }
     public void initialize(){
+        start_SessionManager();
         start_login();
+    }
+    
+    private void start_SessionManager(){
+        UserSession.getInstance();
     }
     
     
@@ -24,6 +31,12 @@ public class SystemController {
         FormLogin login_view = new FormLogin();
         LoginController login_controller = new LoginController(login_view, this);
         login_controller.start(); 
+    }
+
+    void showMainMenu() {
+        FormMainMenu mainForm = new FormMainMenu();
+        MainMenuController controller = new MainMenuController(this, mainForm);
+        controller.initialize();
     }
     
     

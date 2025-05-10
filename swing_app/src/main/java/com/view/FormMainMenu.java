@@ -4,6 +4,9 @@
  */
 package com.view;
 
+import javax.swing.JButton;
+import javax.swing.JMenuItem;
+
 /**
  *
  * @author Elias
@@ -17,6 +20,40 @@ public class FormMainMenu extends javax.swing.JFrame {
         initComponents();
     }
 
+    public JButton getCategoria_btn() {
+        return categoria_btn;
+    }
+
+    public JButton getCuenta_btn() {
+        return cuenta_btn;
+    }
+
+    public JMenuItem getEstado_registro_transaccion_btn() {
+        return estado_registro_transaccion_btn;
+    }
+
+    public JMenuItem getEstado_transaccion_btn() {
+        return estado_transaccion_btn;
+    }
+
+    public JMenuItem getMoneda_btn() {
+        return moneda_btn;
+    }
+
+    public JMenuItem getTipo_movimient_btn() {
+        return tipo_movimient_btn;
+    }
+
+    public JButton getTransacciones_btn() {
+        return transacciones_btn;
+    }
+
+    public JButton getUsuario_btn() {
+        return usuario_btn;
+    }
+    
+    
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -26,28 +63,86 @@ public class FormMainMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        usuario_btn = new javax.swing.JButton();
+        categoria_btn = new javax.swing.JButton();
+        cuenta_btn = new javax.swing.JButton();
+        transacciones_btn = new javax.swing.JButton();
+        jSeparator1 = new javax.swing.JSeparator();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
+        estado_transaccion_btn = new javax.swing.JMenuItem();
+        estado_registro_transaccion_btn = new javax.swing.JMenuItem();
+        moneda_btn = new javax.swing.JMenuItem();
+        tipo_movimient_btn = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("jButton1");
+        usuario_btn.setText("Usuarios");
 
-        jButton2.setText("jButton2");
+        categoria_btn.setText("Categorias");
 
-        jButton3.setText("jButton3");
+        cuenta_btn.setText("Cuentas");
 
-        jButton4.setText("jButton4");
+        transacciones_btn.setText("Transacciones");
 
-        jMenu1.setText("File");
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 618, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(cuenta_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(usuario_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(transacciones_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(39, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(35, 35, 35)
+                    .addComponent(categoria_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(514, Short.MAX_VALUE)))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(cuenta_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(usuario_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(transacciones_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(293, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(42, 42, 42)
+                    .addComponent(categoria_btn, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(320, Short.MAX_VALUE)))
+        );
+
+        jMenu1.setText("Otros");
+
+        estado_transaccion_btn.setText("Estado Transaccion");
+        jMenu1.add(estado_transaccion_btn);
+
+        estado_registro_transaccion_btn.setText("Estado Registro Transaccion");
+        jMenu1.add(estado_registro_transaccion_btn);
+
+        moneda_btn.setText("Monedas");
+        jMenu1.add(moneda_btn);
+
+        tipo_movimient_btn.setText("Tipo Movimiento");
+        jMenu1.add(tipo_movimient_btn);
+
         jMenuBar1.add(jMenu1);
 
-        jMenu2.setText("Edit");
+        jMenu2.setText("Acerca de");
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
@@ -56,28 +151,11 @@ public class FormMainMenu extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(31, 31, 31)
-                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(341, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
-                        .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(343, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -85,12 +163,18 @@ public class FormMainMenu extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton categoria_btn;
+    private javax.swing.JButton cuenta_btn;
+    private javax.swing.JMenuItem estado_registro_transaccion_btn;
+    private javax.swing.JMenuItem estado_transaccion_btn;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JMenuItem moneda_btn;
+    private javax.swing.JMenuItem tipo_movimient_btn;
+    private javax.swing.JButton transacciones_btn;
+    private javax.swing.JButton usuario_btn;
     // End of variables declaration//GEN-END:variables
 }

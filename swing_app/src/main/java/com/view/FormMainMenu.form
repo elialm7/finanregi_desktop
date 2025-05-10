@@ -6,12 +6,34 @@
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="jMenu1">
           <Properties>
-            <Property name="text" type="java.lang.String" value="File"/>
+            <Property name="text" type="java.lang.String" value="Otros"/>
           </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="estado_transaccion_btn">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Estado Transaccion"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="estado_registro_transaccion_btn">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Estado Registro Transaccion"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="moneda_btn">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Monedas"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JMenuItem" name="tipo_movimient_btn">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Tipo Movimiento"/>
+              </Properties>
+            </MenuItem>
+          </SubComponents>
         </Menu>
         <Menu class="javax.swing.JMenu" name="jMenu2">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Edit"/>
+            <Property name="text" type="java.lang.String" value="Acerca de"/>
           </Properties>
         </Menu>
       </SubComponents>
@@ -40,56 +62,91 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
-              <Component id="jButton1" min="-2" pref="84" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jButton2" min="-2" pref="92" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
-              <Component id="jButton3" min="-2" pref="84" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jButton4" min="-2" pref="85" max="-2" attributes="0"/>
-              <EmptySpace pref="341" max="32767" attributes="0"/>
-          </Group>
+          <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="jButton4" pref="43" max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jButton3" pref="43" max="32767" attributes="0"/>
-                      <Component id="jButton2" max="32767" attributes="0"/>
-                      <Component id="jButton1" max="32767" attributes="0"/>
-                  </Group>
-              </Group>
-              <EmptySpace pref="343" max="32767" attributes="0"/>
-          </Group>
+          <Component id="jPanel1" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Component class="javax.swing.JButton" name="jButton1">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jButton1"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton2">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jButton2"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton3">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jButton3"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton4">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="jButton4"/>
-      </Properties>
-    </Component>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Component id="jSeparator1" alignment="1" min="-2" pref="618" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <Component id="cuenta_btn" min="-2" pref="141" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="usuario_btn" min="-2" pref="141" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="transacciones_btn" min="-2" pref="141" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="39" max="32767" attributes="0"/>
+              </Group>
+              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                      <Component id="categoria_btn" min="-2" pref="141" max="-2" attributes="0"/>
+                      <EmptySpace pref="514" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace min="-2" pref="41" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="cuenta_btn" alignment="3" min="-2" pref="87" max="-2" attributes="0"/>
+                      <Component id="usuario_btn" alignment="3" min="-2" pref="87" max="-2" attributes="0"/>
+                      <Component id="transacciones_btn" alignment="3" min="-2" pref="87" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jSeparator1" min="-2" pref="10" max="-2" attributes="0"/>
+                  <EmptySpace pref="293" max="32767" attributes="0"/>
+              </Group>
+              <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
+                      <Component id="categoria_btn" min="-2" pref="87" max="-2" attributes="0"/>
+                      <EmptySpace pref="320" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="usuario_btn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Usuarios"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="categoria_btn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Categorias"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="cuenta_btn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Cuentas"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="transacciones_btn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Transacciones"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JSeparator" name="jSeparator1">
+        </Component>
+      </SubComponents>
+    </Container>
   </SubComponents>
 </Form>
